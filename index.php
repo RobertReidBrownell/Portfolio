@@ -1,3 +1,7 @@
+<?php
+require_once './includes/header.php';
+?>
+
 
 <h2>Why am I a good fit for your project or team?</h2>
 
@@ -8,7 +12,7 @@ client. They very much liked the idea and signed off on the design as a whole an
 Instead of going back to the client and telling them I didn’t know how to do the menu, I did hours and hours of research
 and testing to learn how to do it. In the end I ended up using SASS (Syntactically Awesome Stylesheets) to help generate
 the necessary menu effects and as a result both myself and the client are very happy with the results. See what you think
-<a href="http://rrbconcepts.com/portfolio#goldenage">Golden Age Radio Restoration</a></p>
+<a href="http://rrbconcepts.com/portfolio.php#goldenage">Golden Age Radio Restoration</a></p>
 
 <p>I would be a great fit for your team because I work well with others. Whether that is in an advisory role when a peer
 has come to me with a problem and wants my help solving it or suggesting possible solutions, in a group role where we
@@ -40,7 +44,6 @@ is my current game of choice), disc golf, and I also really enjoy playing boards
 even in my spare time I end up thinking about ways to implement online technologies. I am currently working on learning
 a couple specific technologies so that I can help contribute to an online collaboration to create a user dashboard for
     Destiny players.</p>
-
 
 
 
@@ -76,7 +79,8 @@ Bree Henson(peer)</p>
 </aside>
 
 
-
+<?php
+include'./includes/footer.html';
 
 
 

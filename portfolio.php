@@ -5,6 +5,7 @@
  * Date: 8/27/17
  * Time: 1:10 PM
  */
+require './includes/header.php';
 ?>
 
 
@@ -44,3 +45,7 @@
 	more about building for the Wordpress CMS.</p>
 <p><b>Skills:</b> I used HTML, CSS, JS, PHP, Wordpress,  SQL, and phpMyAdmin</p>
 
+<aside></aside>
+
+<?php
+include './includes/footer.html';
