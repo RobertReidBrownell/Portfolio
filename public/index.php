@@ -1,5 +1,7 @@
 <?php
-require_once './includes/header.php';
+require_once '../includes/initialize.php';
+include_layout_template('header.php');
+require_once(LIB_PATH.DS.'menu.php');
 ?>
 
 
@@ -80,7 +82,7 @@ Bree Henson(peer)</p>
 
 
 <?php
-include'./includes/footer.html';
+include_layout_template('footer.html');
 
 
 

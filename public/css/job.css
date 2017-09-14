@@ -102,7 +102,7 @@ button
   height: 648px;
   background-color: gray;
   position: relative;
-  background-image: url("../images/paper.png");
+  background-image: url("../public/images/paper.png");
 }
 
 

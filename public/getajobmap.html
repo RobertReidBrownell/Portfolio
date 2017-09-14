@@ -1,0 +1,152 @@
+<!doctype html>
+<title>Island Adventure 1</title>
+
+<style>
+
+#stage 
+{
+  position: relative;
+  width: 384px;
+  height: 384px;
+  background-image: url("../images/background.png");
+}
+
+.cell
+{
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+p
+{
+  width: 400px;
+}
+
+</style>
+
+<div id="stage"></div>
+<p id="output"></p>
+
+<script>
+
+//Get a reference to the stage and output
+var stage = document.querySelector("#stage");
+var output = document.querySelector("#output");
+
+//The game map
+var map =
+[
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8]
+  ];
+
+//Map code
+const SCHOOL = 0;
+const HOME = 1;
+const PARK = 2;
+const LIBRARY = 3;
+const STORE = 4;
+const FRIEND = 5;
+const VOLUNTEER = 6;
+const MENTOR = 7;
+const JOBFAIR = 8;
+
+//The size of each cell
+var SIZE = 64;
+
+//The number of rows and columns
+var ROWS = map.length;
+var COLUMNS = map[0].length;
+
+render();
+
+function render()
+{
+  //Clear the stage of img tag cells
+  //from the previous turn
+  
+  if(stage.hasChildNodes())
+  {
+    for(var i = 0; i < ROWS * COLUMNS; i++) 
+    {	 
+      stage.removeChild(stage.firstChild);
+    }
+  }
+  
+  //Render the game by looping through the map arrays
+  for(var row = 0; row < ROWS; row++) 
+  {	
+    for(var column = 0; column < COLUMNS; column++) 
+    { 
+      //Create a img tag called cell
+      var cell = document.createElement("img");
+
+      //Set it's CSS class to "cell"
+      cell.setAttribute("class", "cell");
+
+      //Add the img tag to the <div id="stage"> tag
+      stage.appendChild(cell);
+
+      //Find the correct image for this map cell
+      switch(map[row][column])
+      {
+        case SCHOOL:
+          cell.src = "../images/water.png";
+          break;
+
+        case PARK:
+          cell.src = "../images/island.png";
+          break; 
+
+        case MENTOR:
+          cell.src = "../images/pirate.png";
+          break; 
+
+        case HOME:
+          cell.src = "../images/home.png";
+          break;
+
+        case LIBRARY:
+          cell.src = "../images/home.png";
+          break;
+
+        case PARK:
+          cell.src = "../images/home.png";
+          break;
+
+        case STORE:
+          cell.src = "../images/home.png";
+          break;
+
+        case FRIEND:
+              cell.src = "../images/home.png";
+              break;
+
+        case VOLUNTEER:
+              cell.src = "../images/home.png";
+              break;
+
+
+        case JOBFAIR:
+              cell.src = "../images/home.png";
+              break;
+
+
+
+
+
+
+      }
+  
+      //Position the cell 
+      cell.style.top = row * SIZE + "px";
+      cell.style.left = column * SIZE + "px";
+    }
+  }
+}
+
+</script>
+
