@@ -1,0 +1,430 @@
+/******************************************
+******************************************
+Developer: Robert Reid Brownell
+Table of Contents
+1. Global Styles
+2. Nav Styles
+3. Section Styles
+4. Footer Styles
+5. Form Styles
+6. Media Queries
+
+Default information
+
+Purple (#8d1ecc) (141,30,204)
+Black (#333) (51,51,51)
+Deep green (#42996b) (66,153,107)
+Green (#1ecc70) (30,204,112)
+Lime Green (#28FF0c) (40,255,12)
+Puke green (#2CB21A) (44,178,26)
+Blue (#3925FF) (57,37,255)
+light orange (#CC621E) (204,98,30)
+dark orange (#B25011) (178,80,17)
+
+
+/********************************************************/
+/*1. Global Styles*/
+
+#logo,
+.navbar {
+    position: fixed
+}
+
+.centered,
+.navbar ul,
+.project-content h3,
+h1,
+h2 {
+    text-align: center
+}
+
+body {
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.8;
+    color: #333
+}
+
+p {
+    font-size: 1.3em;
+    margin: .5em .7em;
+    line-height: 1.3
+}
+
+h1,
+h2 {
+    font-family: "Mukta Malar", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700
+}
+
+h1 {
+    color: #F0FFF0;
+    margin: 5em auto 0;
+    font-size: 2em
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0 auto 1em;
+    padding-top: 1em
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #28FF0c
+}
+
+h4 {
+    font-size: 1.3em
+}
+
+.wrap {
+    z-index: -1
+}
+
+
+
+.fa {
+    color: #fff
+}
+
+.fa:hover {
+    color: #28FF0c
+}
+
+
+
+
+#about img {
+    border: 4px solid #28344f;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    max-width: 70%
+}
+
+#about,
+#contact,
+#portfolio,
+#skills,
+#the-best {
+    padding: 3em 0
+}
+
+.project-content {
+    color: #F0FFF0
+}
+
+/*************************
+   2. Nav Styles
+**************************/
+
+.navbar ul li a {
+    display: block;
+    padding: 15px
+}
+
+.navbar ul li a,
+.navbar ul li a:active,
+.navbar ul li a:link,
+.navbar ul li a:visited {
+    text-decoration: none;
+    color: #28ff0c
+}
+
+.navbar ul li a:hover {
+    color: #333
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #CC621E;
+    background-color: unset
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    background: #CC621E;
+    color: #333
+}
+
+button.navbar-toggle {
+    background: #666
+}
+
+div.navbar-header button.navbar-toggle:hover {
+    background: #333
+}
+
+
+/*********************************
+3. Section Styles
+***********************************/
+
+section#portfolio h2,
+section#the-best h2 {
+    color: #F0FFF0
+}
+
+section#contact p {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.header-text p {
+    color: #F0FFF0;
+    font-size: 1.5em;
+    margin-bottom: 5em
+}
+
+#logo-lg {
+    position: relative;
+    top: -75px;
+    left: -160px;
+    width: 500px;
+    height: 500px
+}
+
+.project-content {
+    background: #B25011
+}
+
+.project-content h3 {
+    background: #000;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.8em
+}
+
+.bg-light {
+    background-color: rgba(40, 255, 12, .7)
+}
+
+.proj-img img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px
+}
+
+.proj-img {
+    background: #B25011
+}
+
+
+
+.project-wrap {
+    padding-bottom: 10px;
+    margin: 10px;
+    height: 100%
+}
+
+.row .project-wrap {
+    margin-top: 2em
+}
+
+h2.testimonials {font-size: 2.5em}
+
+.who-am {
+    background: rgba(40, 255, 12, .7);
+    margin: 1em;
+    padding-bottom: 1em
+}
+
+.quote-box {
+    background: #000;
+    border: 5px solid #fff;
+    color: #fff;
+    padding: 1em;
+    margin: 1em
+}
+
+div.quote {
+    display: none
+}
+
+div.quote:first-of-type {
+    display: block
+}
+
+.content {
+    margin-left: 0;
+    margin-right: 0
+}
+
+ul.skills {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 8px;
+    margin: .3em
+}
+
+ul.skills>li {
+    display: inline-block;
+    font-size: 1.3em
+}
+
+section#skills .skill-icon img {
+    margin: .5em auto;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+section#skills .skill-icon img:hover {
+    -webkit-filter: none;
+    filter: none
+}
+
+
+
+/*********************************
+4. Footer Styles
+**********************************/
+footer {
+    color: #F0FFF0
+}
+
+.text-center i {
+    padding-top: 8px
+}
+
+
+/*********************************
+5. Form Styles
+**********************************/
+
+
+input,
+textarea {
+    border-style: none;
+    border-radius: 4px;
+    padding: .5em;
+    width: 95%
+}
+
+label {
+    margin: .5em auto
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    outline: #B25011 solid 1px
+}
+
+input[type=submit] {
+    background: silver;
+    border-radius: 4px;
+    border-style: none;
+    border-bottom: 4px solid #787878;
+    color: #333;
+    text-transform: uppercase;
+    width: 5.6em
+}
+
+input[type=submit]:hover {
+    background: #CC621E;
+    border-color: #B25011
+}
+
+.input-pdding {
+    margin-bottom: 1em
+}
+
+.small {
+    margin: .9em 1.1em
+}
+
+
+/**********************************
+6. Media Queries
+***********************************/
+
+@media (min-width:768px) {
+    #logo {
+        top: -50px;
+        left: -10px;
+        width: 140px;
+        height: 140px
+    }
+    h1 {
+        margin-top: 8em;
+        font-size: 2.5em
+    }
+    div.row:nth-of-type(odd) div.proj-img {
+        border-radius: 5px 5px 5px 0
+    }
+    div.row:nth-of-type(odd) div.project-content {
+        border-radius: 0 0 5px 5px
+    }
+    div.row:nth-of-type(even) div.proj-img {
+        border-radius: 5px 5px 0
+    }
+    div.row:nth-of-type(even) div.project-content {
+        border-radius: 0 0 5px 5px
+    }
+    .navbar ul {
+        left: 10%
+    }
+    input[type=submit] {
+        width: 5.1em
+    }
+}
+
+@media (min-width:992px) {
+    div.row:nth-of-type(odd) div.proj-img {
+        border-radius: 5px 0 0 5px
+    }
+    div.row:nth-of-type(odd) div.project-content {
+        border-radius: 0 5px 5px
+    }
+    div.row:nth-of-type(even) div.proj-img {
+        border-radius: 0 5px 5px 0
+    }
+    div.row:nth-of-type(even) div.project-content {
+        border-radius: 5px 0 5px 5px
+    }
+    div.row:last-of-type div.project-content {
+        border-radius: 0 5px 5px
+    }
+    div.row:last-of-type div.proj-img {
+        border-radius: 5px 0 0 5px
+    }
+    input[type=submit] {
+        width: 8em
+    }
+}
+
+@media (min-width:1200px) {
+    div.row:nth-of-type(odd) div.proj-img {
+        border-radius: 5px 0 5px 5px
+    }
+    div.row:nth-of-type(odd) div.project-content {
+        border-radius: 0 5px 5px 0
+    }
+    div.row:nth-of-type(even) div.proj-img {
+        border-radius: 0 5px 5px
+    }
+    div.row:nth-of-type(even) div.project-content {
+        border-radius: 5px 0 0 5px
+    }
+    div.row:last-of-type div.project-content {
+        border-radius: 0 5px 5px
+    }
+    div.row:last-of-type div.proj-img {
+        border-radius: 5px 0 0 5px
+    }
+    input[type=submit] {
+        width: 10em
+    }
+    h1 {
+        margin-top: 6em;
+        font-size: 3em
+    }
+}

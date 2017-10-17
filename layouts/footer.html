@@ -1,0 +1,35 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                    <ul class=" list-inline social-buttons">
+                        <li><a id="twitter" href="https://twitter.com/ReidJeremiah24" target="_blank"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a id="github" href="https://github.com/RobertReidBrownell" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a></li>
+                    </ul>
+                <p><i class="fa fa-copyright"></i> Reid Brownell - 2017 </p>
+
+            </div><!-- .col-xs-12 text-center end -->
+        </div><!-- row -->
+    </div><!--container -->
+</footer>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(".smooth-scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+        document.activeElement.blur();
+
+    });
+    // Collapse the menu when a link is selected on mobile
+    $('.navbar-collapse ul li a').click(function () {
+
+        $('.navbar-toggle:visible').click();
+
+    });
+</script>
+</body>
+</html>
+
+
