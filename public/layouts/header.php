@@ -2,9 +2,10 @@
 <html lang="en-US">
 <head>
     <title>Reid Brownell's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The portfolio site of Robert Reid Brownell">
-    <meta name="keywords" content="portfolio, developer, designer, blog">
+    <meta name="keywords" content="Portfolio, Developer, Designer, Blog, PHP">
     <meta name="author" content="Robert Reid Brownell">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.v-2.png">
@@ -14,7 +15,7 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/base4.css" rel="stylesheet" type="text/css">
+    <link href="css/base.min.css" rel="stylesheet" type="text/css">
     <style type="text/css" media="screen">
 
         .wrap{background: black url("images/header-sm.png") top/cover no-repeat fixed}
@@ -88,4 +89,3 @@
 
     </style>
 </head>
-

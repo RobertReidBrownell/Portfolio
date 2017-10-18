@@ -28,6 +28,20 @@
         $('.navbar-toggle:visible').click();
 
     });
+    //Ajax logic to run my contact form
+    $('#submit').click(function() {
+        $.ajax({
+            url: 'contactform.php',
+            type: 'POST',
+            data: {
+                email: 'email@example.com',
+                message: 'hello world!'
+            },
+            success: function(msg) {
+                alert('Email Sent');
+            }
+        });
+    });
 </script>
 </body>
 </html>

@@ -11,7 +11,6 @@
 
 // DIRECTORY_SEPARATOR is a PHP pre-defined constant
 // (\ for Windows, / for Unix)
-/*
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 defined('SITE_ROOT') ? null :
@@ -25,10 +24,10 @@ require_once(LIB_PATH.DS.'functions.php');
 
 // load core objects
 require_once(LIB_PATH.DS.'database.php');
-*/
 
 
 
+/*
 // Define the core paths
 // Define them as absolute paths to make sure that require_once works as expected
 
@@ -46,3 +45,4 @@ require_once(LIB_PATH.DS.'functions.php');
 
 // load core objects
 require_once(LIB_PATH.DS.'database.php');
+*/

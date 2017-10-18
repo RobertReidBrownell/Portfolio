@@ -8,7 +8,7 @@
  * @version 1.0
  */
 
-/*
+
 function dbConnect($usertype, $connectionType = 'mysqli') {
 	$host = 'localhost';
 	$db = 'reidbrow_port';
@@ -37,8 +37,8 @@ function dbConnect($usertype, $connectionType = 'mysqli') {
 
 	}
 }
-*/
 
+/*
 function dbConnect($usertype, $connectionType = 'mysqli') {
 	$host = 'us87.siteground.us';
 	$db = 'reidbrow_port';
@@ -64,3 +64,4 @@ function dbConnect($usertype, $connectionType = 'mysqli') {
 
 	}
 }
+*/
