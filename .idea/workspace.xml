@@ -1,134 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6afd5556-49fb-4cd3-b245-25be260f2bc2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android-chrome-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android-chrome-512x512.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/contact.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/base.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/job.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style copy.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/trash.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/favicon-16x16.v-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/favicon-32x32.v-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/getajobmap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/goodfit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/css.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discography.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/discographyphp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/git.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/golden.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/header-sm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/html.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/js.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/114_2546699.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/114_2546699_medium.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/114_2546699_screen.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/114_2546699_small.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/550_3170692.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/discography.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/discographyhigh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/discographyphp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/discographyphphigh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/golden.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/goldenhigh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/header-lg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/header-sm-lg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/okvrc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/okvrchigh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/smacss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-port-assets/smacsshigh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/bs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/css.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/git-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/git.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/html.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/js-grn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/js-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/js.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/php.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/phpma-old.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/phpma-solid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/phpma.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/ps.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/sass-lg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/sass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/sass.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/sketch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/sql.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/wp-lg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lg-skill-assets/wp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo2.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/newestlogo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/okvrc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/optimised.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/php.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/phpma.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ps.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/reidb.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sketch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/bs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/css.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/git.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/html.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/js.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/php.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/phpma.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/ps.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/sass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/sketch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/sql.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sm-skill-assets/wp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/smacss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sq-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sql.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/wp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/title.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/job.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-3.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.quovolver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.quovolver.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.simpleQuote.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/layouts/footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/layouts/header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mstile-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/phpinfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/quotes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/safari-pinned-tab.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/skills.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/whoam.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/database.php" afterPath="$PROJECT_DIR$/includes/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/functions.php" afterPath="$PROJECT_DIR$/includes/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/initialize.php" afterPath="$PROJECT_DIR$/includes/initialize.php" />
-    </list>
+    <list default="true" id="6afd5556-49fb-4cd3-b245-25be260f2bc2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -397,11 +270,6 @@
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -548,18 +416,17 @@
       <workItem from="1508190673775" duration="532000" />
       <workItem from="1508245962536" duration="15796000" />
       <workItem from="1508302200787" duration="679000" />
-      <workItem from="1508340697894" duration="5248000" />
+      <workItem from="1508340697894" duration="5361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271774000" />
+    <option name="totallyTimeSpent" value="271887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1680" height="1023" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17321429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17321429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
