@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108469719-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108469719-1');
+    </script>
+    <!-- Meta -->
     <title>Reid Brownell's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The portfolio site of Robert Reid Brownell">
     <meta name="keywords" content="Portfolio, Developer, Designer, Blog, PHP">
     <meta name="author" content="Robert Reid Brownell">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.v-2.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.v-2.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/base.min.css" rel="stylesheet" type="text/css">
+    <!-- Inline styles added to help above the fold render blocking -->
     <style type="text/css" media="screen">
 
         .wrap{background: black url("images/header-sm.png") top/cover no-repeat fixed}
@@ -85,7 +100,10 @@
             background: #42996b;
             border-color: #1ecc70
         }
-
+        #success h3 {
+            color: #000;
+        }
+         
 
     </style>
 </head>

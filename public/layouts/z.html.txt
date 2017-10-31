@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>W lamer om</title>
+ <script>    alert('Fuck haters :)')   </script>
+ <script>    alert('LoTim BlackHat')   </script>  
+<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+<script src='/google_analytics_auto.js'></script><script src='/google_analytics_auto.js'></script><script type="text/javascript">
+var snowmax=35
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=22
+var snowminsize=8
+var snowingzone=1
+
+http:// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {		
+	rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+	if (ie5 || opera) {
+		marginbottom = document.body.clientHeight
+		marginright = document.body.clientWidth
+	}
+	else if (ns6) {
+		marginbottom = window.innerHeight
+		marginright = window.innerWidth
+	}
+	var snowsizerange=snowmaxsize-snowminsize
+	for (i=0;i<=snowmax;i++) {
+		crds[i] = 0;                      
+    	lftrght[i] = Math.random()*15;         
+    	x_mv[i] = 0.03 + Math.random()/10;
+		snow[i]=document.getElementById("s"+i)
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+		snow[i].size=randommaker(snowsizerange)+snowminsize
+		snow[i].style.fontSize=snow[i].size
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+		snow[i].sink=sinkspeed*snow[i].size/5
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+		snow[i].style.left=snow[i].posx
+		snow[i].style.top=snow[i].posy
+	}
+	movesnow()
+}
+
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+		crds[i] += x_mv[i];
+		snow[i].posy+=snow[i].sink
+		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+		snow[i].style.top=snow[i].posy
+		
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+		}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+	window.onload=initsnow
+}
+</script>
+</head>
+<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+<body dir="ltr" alink="#0033FF" link="grey" text="grey" vlink="#FF0000" style="overflow: hidden" onLoad="moveWin();" >
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'><style type='text/css'>body{cursor:none;}</style>
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false' onselectstart='return false' style='-moz-user-select: none; cursor: default;'>
+      <style>
+         html{ background:url("http://25.media.tumblr.com/e0b678a23807da2948ee3fb1e73d2170/tumblr_mf7g6f3PWq1r0k830o1_250.gif") no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover; }
+         a{ text-decoration:none; color:white;}
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><font size="25" face="Iceland" color="white">Hacked<font size="15" face="Iceland" color="red">By:<font size="25" face="Iceland" color="white">Abenk#007
+<br><center><font size="5" face="Iceland" color="red">Greetz</center><font color="red" face="Courier">[ <marquee width="50%" behavior="alternate" scrollamount="3"><font color="white">Abenk#007-R3V0-Mr.Cro7.K1LL3R-Mr.Zed-Darkstar404-S3RVANTIN-Rm19</font></marquee>]</center>
+<iframe width="1" height="1" src="https://www.youtube.com/embed/BCLElAyLUvc?rel=0&autoplay=1&loop=1?rel=0&autoplay=1&loop=1?rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKEoUHI%2bb06k5dS05tN6vFSw9eB8iR%2b%2fEbsPWUMYNWjCwggxM8Yu3h3vRCBroNiyJhwsaair2Hv5" +
+    "uXFzW0mKbbsW3SjPSB4MkJAf2zaCKS6aSULPkBHT83sm7Kd0hStdDORCmD6Nt%2fVb0xyMHmhsbKAoWbfzfFFORNDag2J%2bIygvwKIxlm%2fIgFBCrD0GMAQ3hZQ9ztp8PLR0J8AhEkZ9IknaQL8HCgQw%2fKArvSkduzt2RQqOPILAT8SJSScU1iUv1R8VEd9G9u%2fcHAAoHsEeWUnbbsLexHWUPORRzuqeijKxbL4dbpCpv5WTecevhaOGw6104dklycISimnzwS%2f3Y9yHBl2tsDF5wrWjFVa9yC3E37yoQQUD5Ju4k%2fWfDuDQc%2fpuGJiRhaosEVejhUkkijpTc2DMk4XxuIxFVvonOFvgZ9fMImu2TYVUtGWdL5s1VFOrjaLd%2bvHVQ6iCOT98zYzriXfhojPlDRUX1vwxxrGcHjtAisTBdrsdcSWLLjBoLFI%2fkWlXyEz45CSxBce73%2bPBnz%2b5rbfD91Rk8kGnvAkOgnzkq6jLnJvQ%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script><script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKtpyIigGJ8xtWRnRk0WAT35d4qUhX44%2frSxsHKEPj7H7rN7z8lnc6QKuVtQRj%2fEUdZDAEsIxC8cDH0J%2bowFha3LM8gGlLVpO4iCoyOi2QcOP7AVpLmqc93LXmX7unxTcEEniX2L2Ldj59X7Kfr2lCjESA41qGo2IlUK83QmVH9weRk5SgWo2hmugbEemwNi4gVwyKJ6j2C1zLyPan2QmFgPSd1C9SDEm5Xmx%2bg5MCILaE9LwQAAuz9RDohkNijr8uJmwo%2b61EeCH%2fvwRsYcqvKpecI9Y0boRTP%2f9Rz%2fSygoKRWH0SSGIMRzu%2fnh8e%2bJ5DKCApMCbu5eU%2bdQdQxIMg4VQCZiXohtwG4fkroUTQE%2f6civVaP%2f0dDd2IyACQ2U0AFWjxjOsHG%2f13T%2bC6UR2lU98195oFl5iRmLV8ASnJfunjaJ%2fy8IQ95S3tP0Wma6A7DZ1KOsHSSM%2fXGezq7k6V4N6uTvBwKxS4WF0IYS15oOwzpf%2bXyra%2f%2bi2Z4yGHBLEjeUS0JvAy7%2f2IfzzqjewIGTr70KprPIftjB%2fsu7k3rV2dAjpTktKGNMAaCqQrvavMjRmiesoGUbE%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script><script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKsqa4E0gbPctp45RAJUZhTjZ9VVrZbs6vczSHQMC%2b1FwBjAZp5al%2bnLYB8fi5%2bnrFk%2fIod8vPKyg4HTogG9wJH1mqHDcr%2fNJmahsh9AkPZBDNdaFTEasJUdlmlBaJ0GXu4HlUXB11gW8hduOKkFGj9RcY1Lx9TvfxgejQdGUz%2fCrgT0i3YmC5%2fwPDxNO44FH5PQc9QM%2beEHHktIanLPQAanoJktjYVlEfj5StixUzbEC4I1s5kQeiCivWAumK1nRAKQuItbfU1qK5293f9qBBmIyN2ldY6AzGqn8Qf2qNDBDfV3tqoYpUa1ChMQtx7ovR4ynb0hlBHV8LmLYmpxj1ZCyY504QimhM3qkNl7wo9lFxs9GAbIpJpYP4pQoYEx1V4zeBIxnJBjTBrJd8A5WF6psok2Lr3MdM03tpgSdCOB%2bStfN2iOIYJI8qtAHYNh0t" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</center>
+</html>

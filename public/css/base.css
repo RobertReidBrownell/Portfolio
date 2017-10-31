@@ -185,6 +185,14 @@ section#contact p {
     height: 500px
 }
 
+.quote-box {
+    display: none;
+}
+
+.good-fit{
+    background: #c0c0c0;
+}
+
 .project-content {
     background: #B25011
 }
@@ -222,28 +230,12 @@ section#contact p {
     margin-top: 2em
 }
 
-h2.testimonials {font-size: 2.5em}
+h2.testimonial {font-size: 2.5em}
+
 
 .who-am {
     background: rgba(40, 255, 12, .7);
-    margin: 1em;
     padding-bottom: 1em
-}
-
-.quote-box {
-    background: #000;
-    border: 5px solid #fff;
-    color: #fff;
-    padding: 1em;
-    margin: 1em
-}
-
-div.quote {
-    display: none
-}
-
-div.quote:first-of-type {
-    display: block
 }
 
 .content {
@@ -257,6 +249,7 @@ ul.skills {
     padding-left: 8px;
     margin: .3em
 }
+
 
 ul.skills>li {
     display: inline-block;
@@ -315,22 +308,28 @@ input[type=email]:focus,
 input[type=text]:focus,
 select:focus,
 textarea:focus {
-    outline: #B25011 solid 1px
+    outline: #B25011 solid 1px;
+    background: #c4c4c4;
 }
 
-button#contact-form {
-    background: silver;
+input[type=submit] {
+    background: #666666;
     border-radius: 4px;
     border-style: none;
     border-bottom: 4px solid #787878;
-    color: #333;
+    color: #28ff0c;
     text-transform: uppercase;
-    width: 5.6em
+    width: 5.3em;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.5em;
+
 }
 
-button#contact-form:hover {
+input[type=submit]:hover {
     background: #CC621E;
-    border-color: #B25011
+    border-color: #B25011;
+    color: #000;
 }
 
 .input-pdding {
@@ -346,6 +345,27 @@ button#contact-form:hover {
 6. Media Queries
 ***********************************/
 
+
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
 @media (min-width:768px) {
     #logo {
         top: -50px;
@@ -357,6 +377,76 @@ button#contact-form:hover {
         margin-top: 8em;
         font-size: 2.5em
     }
+    .testimonials{
+        margin-top: 25px;
+    }
+    
+    .quote-box{
+        display: block;}
+
+    /* carousel */
+    #quote-carousel
+    {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+        background: #000;
+        border: 5px solid #fff;
+        color: #fff;
+    }
+
+    /* Control buttons  */
+    #quote-carousel .carousel-control
+    {
+        background: none;
+        color: #222;
+        font-size: 2.3em;
+        text-shadow: none;
+        margin-top: 30px;
+    }
+    /* Previous button  */
+    #quote-carousel .carousel-control.left
+    {
+        left: -12px;
+    }
+    /* Next button  */
+    #quote-carousel .carousel-control.right
+    {
+        right: -12px !important;
+    }
+    /* Changes the position of the indicators */
+    #quote-carousel .carousel-indicators
+    {
+        right: 50%;
+        top: auto;
+        bottom: 0px;
+        margin-right: -19px;
+    }
+    /* Changes the color of the indicators */
+    #quote-carousel .carousel-indicators li
+    {
+        background: #c0c0c0;
+    }
+    #quote-carousel .carousel-indicators .active {
+        background: #333333;
+    }
+    /* End carousel */
+
+    .item blockquote {
+        border-left: none;
+        margin: 0;
+    }
+
+    .item blockquote img {
+        margin-bottom: 10px;
+    }
+
+    .item blockquote p:before {
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        float: left;
+        margin-right: 10px;
+    }
+    
     div.row:nth-of-type(odd) div.proj-img {
         border-radius: 5px 5px 5px 0
     }
@@ -372,8 +462,8 @@ button#contact-form:hover {
     .navbar ul {
         left: 10%
     }
-    button#contact-form {
-        width: 5.1em
+    input[type=submit] {
+        width: 6.5em
     }
 }
 
@@ -396,8 +486,8 @@ button#contact-form:hover {
     div.row:last-of-type div.proj-img {
         border-radius: 5px 0 0 5px
     }
-    button#contact-form {
-        width: 8em
+    input[type=submit] {
+        width: 9.3em
     }
 }
 
@@ -420,11 +510,13 @@ button#contact-form:hover {
     div.row:last-of-type div.proj-img {
         border-radius: 5px 0 0 5px
     }
-    button#contact-form {
-        width: 10em
+    input[type=submit] {
+        width: 7em
     }
     h1 {
         margin-top: 6em;
         font-size: 3em
     }
 }
+
+

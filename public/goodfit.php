@@ -7,17 +7,22 @@
  */
 
 // Create SQL query to get list of quotes
-$quote = "SELECT quote.text, quote.people_id, people.id, people.first_name, people.last_name, people.relation_id, relation.relation
+$quote = "SELECT quote.id, quote.text, quote.people_id, people.first_name, people.last_name, people.relation_id, relation.relation
 FROM quote, people, relation
-WHERE quote.people_id = people.id AND people.relation_id = relation.id;";
+WHERE quote.people_id = people.id AND people.relation_id = relation.id
+ORDER BY quote.id ASC";
 // Run the query
 $list = $conn->query($quote);
+// creating variable to cycle the number of quotes
+$fulllist = $list->num_rows;
+$i=0;
+
 ?>
-<section id="the-best" class="bg-light">
+<section id="intro" class="bg-light">
     <div class="container">
         <div class="row">
-            <h2>Why me?</h2>
-            <div class="col-lg-8 col-md-6 col-sm-7 col-sm-push-0 col-xs-10 col-xs-push-1 good-fit">
+            <div class="col-lg-8 col-md-6 col-sm-7 col-xs-12">
+                <h2>Why me?</h2>
                 <?php
                 $goodfit = "SELECT * FROM text 
                             WHERE id = '8' OR id = '9'";
@@ -30,21 +35,52 @@ $list = $conn->query($quote);
 
 			<?php } ?>
 
-            </div><!-- col-lg-8 col-md-7 col-sm-7 col-lg-push-1 col-md-push-1 col-sm-push-0 end -->
-            <div class="col-lg-3 col-md-5 col-md-push-0 col-sm-4 col-sm-push-0 col-xs-8 col-xs-push-3 quote-box">
-                <h2 class="testimonials">Testimonials</h2>
+            </div><!-- .col-lg-8 col-md-6 col-sm-7 col-sm-push-0 col-xs-12 good-fit end -->
 
-		        <?php while($row = $list->fetch_assoc())  { ?>
-                    <div class="quote">
+            <div class="col-xs-10 col-xs-push-1 quote-box">
+                <h2 class="testimonial">Testimonials</h2>
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
 
-                        &quot; <?= $row['text']; ?>&quot;<br>
-                        <b><?= $row['first_name']; ?> <?= $row['last_name']; ?></b>
-                        (<?= $row['relation']; ?>)
+	            <?php while(($row = $list->fetch_assoc()) && ($i<=$fulllist)) {
 
-                    </div><!-- .quote end -->
-		        <?php  }  ?>
+		            if ( $i === 0 ) { ?>
 
-            </div><!-- .col-lg-3 col-md-5 col-md-push-0 col-sm-4 col-sm-push-0 col-xs-8 col-xs-push-3 quote-box end -->
+                        <!-- Quote <?= $i ?> -->
+                        <div class="item active">
+                            <div class="col-xs-12">
+                                        <blockquote>
+                                <p><?= trim($row['text']); ?></p>
+
+                                <small><b><?= trim($row['first_name']); ?> <?= trim($row['last_name']); ?>
+                                    (<?= trim($row['relation']); ?>)</b>
+                                </small>
+                                        </blockquote>
+                            </div><!-- .col-xs-12 end -->
+                        </div><!-- .quote <?= $i ?> end -->
+			            <?php $i ++;
+		            } else { ?>
+                        <!-- Quote <?= $i ?> -->
+                        <div class="item">
+                            <div class="col-xs-12">
+                                <blockquote>
+                                    <p><?= trim($row['text']); ?></p>
+
+                                    <small><b><?= trim($row['first_name']); ?> <?= trim($row['last_name']); ?>
+                                        (<?= trim($row['relation']); ?>)</b>
+                                    </small>
+                                </blockquote>
+                            </div><!-- .col-xs-12 end -->
+                        </div><!-- .quote <?= $i ?> end -->
+			            <?php $i ++;
+		            }
+	            }?>
+            </div><!-- .carousel-inner end -->
+                        <a data-slide="prev" title="Previous" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left testimonials"></i></a>
+                        <a data-slide="next" title="Next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right testimonials"></i></a>
+        </div> <!-- .carousel slide -->
+    </div><!-- .col-xs-10 col-xs-push-1 quote-box end -->
         </div> <!-- .row end -->
-    </div><!-- .container end -->
-</section> <!-- #the-best end -->
+    </div> <!-- .container end -->
+</section> <!-- #intro end -->

@@ -1,6 +1,7 @@
 <?php
+set_include_path('/Applications/XAMPP/xamppfiles/htdocs/portfolio/includes/');
 
-require_once '/portfolio/includes/initialize.php';
+require_once 'initialize.php';
 include_layout_template('header.php');
 require_once(LIB_PATH.DS.'menu.php');
 $conn = dbConnect('read');

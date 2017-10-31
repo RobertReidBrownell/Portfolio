@@ -9,7 +9,7 @@
 <section id="about" class="bg-dark">
     <div class="container">
          <div class="row">
-             <div class="col-sm-8 col-sm-push-2 who-am">
+             <div class="col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 who-am">
                 <h2>Who am I?</h2>
                     <div class="portrait"><img src="images/reidb.gif" alt="A graphic representation of Reid Brownell"></div><!-- .portrait -->
 
@@ -24,7 +24,7 @@
 
 
 	<?php } ?>
-             </div>     <!-- .col-sm-8 col-sm-push-2 who-am end -->
+             </div>     <!-- .col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 who-am -->
         </div><!-- .row end -->
     </div><!-- .container end -->
-</section> <!-- #about end -->
+</section> <!-- #about .bg-dark end -->

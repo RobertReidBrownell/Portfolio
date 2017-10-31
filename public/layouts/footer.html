@@ -15,34 +15,10 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(".smooth-scroll").click(function (event) {
-        event.preventDefault();
-        $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
-        document.activeElement.blur();
-
-    });
-    // Collapse the menu when a link is selected on mobile
-    $('.navbar-collapse ul li a').click(function () {
-
-        $('.navbar-toggle:visible').click();
-
-    });
-    //Ajax logic to run my contact form
-    $('#submit').click(function() {
-        $.ajax({
-            url: 'contactform.php',
-            type: 'POST',
-            data: {
-                email: 'email@example.com',
-                message: 'hello world!'
-            },
-            success: function(msg) {
-                alert('Email Sent');
-            }
-        });
-    });
-</script>
+<script src="js/TweenMax.min.js"
+<script src="js/ScrollMagic.min"></script>
+<script src="js/custom.js"></script>
+<script src="js/plugins/animation.gsap.min.js"></script>
 </body>
 </html>
 
